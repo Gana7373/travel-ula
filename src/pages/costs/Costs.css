@@ -1,0 +1,85 @@
+/* New Costs.css */
+
+/* General Section Styling */
+.costs-section {
+    background: #f7f7f7; /* Light Grey background */
+    padding: 60px 20px;
+    color: #333;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    max-width: 1100px;
+}
+
+/* Heading */
+.costs-section h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Cost Details Block */
+.cost-details {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+/* Individual Cost Detail */
+.cost-details p {
+    font-size: 1.3rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.cost-details strong {
+    color: #16A085; /* Teal color for prices */
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Special Offer Section */
+.offer {
+    background: #EAF2F8; /* Soft blue background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer h3 {
+    font-size: 2rem;
+    color: #16A085;
+    margin-bottom: 15px;
+}
+
+/* Hover Effect on Cost Details */
+.cost-details:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .costs-section {
+        padding: 40px 10px;
+    }
+
+    .costs-section h2 {
+        font-size: 2rem;
+    }
+
+    .cost-details p {
+        font-size: 1.1rem;
+    }
+
+    .offer h3 {
+        font-size: 1.5rem;
+    }
+}

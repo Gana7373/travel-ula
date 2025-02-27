@@ -1,0 +1,107 @@
+/* InclusionsExclusions.css */
+
+/* Main Section Styling */
+.inclusions-exclusions-section {
+    background-color: #f9fafb; /* Light grey background */
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .inclusions-exclusions-section h2 {
+    font-size: 2.5rem;
+    color: #2a3d56;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  /* Inclusions & Exclusions Subheadings */
+  .inclusions-exclusions-section h3 {
+    font-size: 2rem;
+    color: #3a4a59;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  /* Lists of Inclusions and Exclusions */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 1.1rem;
+    color: #4a5b66;
+    margin: 12px 0;
+    padding-left: 30px;
+    position: relative;
+  }
+  
+  /* Icons */
+  ul li::before {
+    content: "✔️"; /* Checkmark icon for inclusions */
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    color: #3b8c4f; /* Green color for inclusions */
+  }
+  
+  /* Exclusions styling */
+  ul li.exclusion::before {
+    content: "❌"; /* Cross icon for exclusions */
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    color: #d9534f; /* Red color for exclusions */
+  }
+  
+  /* Cards for Each List Item */
+  .card-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect for cards */
+  .card-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #4a5b66;
+    line-height: 1.5;
+  }
+  
+  .card-item p strong {
+    color: #3a4a59;
+    font-weight: 600;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .inclusions-exclusions-section h2 {
+      font-size: 2rem;
+    }
+  
+    .inclusions-exclusions-section h3 {
+      font-size: 1.6rem;
+    }
+  
+    .card-item p {
+      font-size: 0.95rem;
+    }
+  }
+  

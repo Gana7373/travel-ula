@@ -1,0 +1,57 @@
+/* Overview.css */
+.overview-section {
+    background-color: #f4f4f4;
+    padding: 0px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+  
+  .overview-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .overview-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  
+  .overview-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  .quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #007bff;
+    margin-top: 30px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .overview-section {
+      padding: 40px 10px;
+    }
+  
+    .overview-section h2 {
+      font-size: 2rem;
+    }
+  
+    .overview-section p {
+      font-size: 1rem;
+    }
+  }
+  

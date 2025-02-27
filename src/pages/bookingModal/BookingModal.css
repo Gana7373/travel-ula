@@ -1,0 +1,120 @@
+/* BookingModal.css */
+
+/* Overlay for the modal background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px; /* Max width of the modal */
+    max-height: 80vh; /* Restrict the modal's height */
+    overflow-y: auto; /* Allow scrolling if content exceeds max height */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: slideIn 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px; /* Add some space between form fields */
+  }
+  
+  /* Header styling */
+  h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FF6347;
+  }
+  
+  /* Form label */
+  label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input fields */
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Buttons container */
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add space between buttons */
+  }
+  
+  /* Button styling for Submit */
+  .submit-btn {
+    width: 48%; /* Adjust width to fit side by side */
+    padding: 12px;
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #FF4500;
+  }
+  
+  /* Close button with text */
+  .close-btn {
+    width: 48%; /* Adjust width to fit side by side */
+    background-color: #007BFF; /* Blue color for Close */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .close-btn:hover {
+    background-color: #0056b3; 
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
